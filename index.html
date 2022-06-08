@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title> E Learning Website</title>
+
+  <!-- swiper js  -->
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+  <!-- swiper js  -->
   <!-- custom css  -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -15,8 +22,10 @@
   <!-- font awesome cdn  -->
 </head>
 <body>
+
+
   <!-- ========================navbar section ====================-->
-  <nav>
+  <nav class="">
     <div class="container">
       <div class="logo">
         স্কিললার্নিং
@@ -25,8 +34,8 @@
         <li><a href="#" class="list-item">হোম</a></li>
         <li><a href="#course" class="list-item">কোর্স সমুহ</a></li>
         <li><a href="#service" class="list-item">আমাদের সেবা সমুহ</a></li>
-        <li><a href="" class="list-item">সাফল্যের গল্প</a></li>
-        <li><a href="" class="list-item">যোগাযোগ</a></li>
+        <li><a href="#testimonial" class="list-item">সাফল্যের গল্প</a></li>
+        <li><a href="#workshop" class="list-item">যোগাযোগ</a></li>
       </ul>
     </div>
   </nav>
@@ -68,9 +77,9 @@
         <a href="" class="course-btn">সাইবার সিকুরেটি</a>
         <a href="" class="course-btn">ডিজিটাল মার্কেটিং</a>
       </div>
-      <div class="course-container">
+      <div class="course-wrapper">
         <figure class="course-card">
-          <img src="./images/Rectangle 10.png" alt="">
+          <img src="./images/frontend.png" alt="">
           <figcaption>
             <p class="card-title">ওয়েব ডেভেলপমেন্ট</p>
             <h5 class="course-name">প্রোফেশনাল ফ্রন্ট এন্ড ডেভেলপমেন্ট</h5>
@@ -84,9 +93,264 @@
             </div>
           </figcaption>
         </figure>
+        <figure class="course-card">
+          <img src="./images/Digital Marketing.png" alt="">
+          <figcaption>
+            <p class="card-title">ডিজিটাল মার্কেটিং</p>
+            <h5 class="course-name"> ফুলস্টাক ডিজিটাল মার্কেটিং</h5>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+              <p>(৩৪০০+ রিভিউস)</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="course-card">
+          <img src="./images/backend.png" alt="">
+          <figcaption>
+            <p class="card-title">ওয়েব ডেভেলপমেন্ট</p>
+            <h5 class="course-name">ব্যাকএন্ড ডেভেলপমেন্ট উইথ পাইথন</h5>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+              <p>(৭৪০০+ রিভিউস)</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="course-card">
+          <img src="./images/fullstack.png" alt="">
+          <figcaption>
+            <p class="card-title">ওয়েব ডেভেলপমেন্ট</p>
+            <h5 class="course-name">প্রফেশনাল ফুলস্টাক ডেভেলপমেন্ট </h5>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+              <p>(৪২০০+ রিভিউস)</p>
+            </div>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
   <!-- ========================course section ====================-->
+  <!-- ========================services section ====================-->
+  <section id="service">
+    <div class="service-header">
+      <h2>আমাদের সেবা সমূহ </h2>
+      <p>কেবল ক্লাস নয়, স্কিল লার্নিং সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। তাই উন্নতমানের কোর্সের সাথে আপনি পাচ্ছেন কিছু বোনাস সুবিধা, যা শুধুমাত্র আমরাই দিয়ে থাকি।</p>
+    </div>
+    <div class="container service-container">
+<figure class="service-card">
+<img src="./images/support.png" alt="">
+<h4>২৪/৭ সাপোর্ট সিস্টেম</h4>
+<p>ট্রেনিং শেষ হলেও আপনার সঙ্গে সম্পর্ক কিন্তু শেষ নয়। ক্রিয়েটিভ আইটির শিক্ষার্থী হিসেবে আপনি পাচ্ছেন লাইফ টাইম সাপোর্ট। অনলাইনে ২৪/৭ সাপোর্ট পাচ্ছেন যেকোনো সময়। আমাদের বিষয় ভিত্তিক অভিজ্ঞ টিম অফলাইন বা অফলাইনে এই সাপোর্ট নিশ্চিত করে থাকেন।</p>
+</figure>
+<figure class="service-card">
+<img src="./images/freelance.png" alt="">
+<h4>রিভিউ ক্লাস সিস্টেম</h4>
+<p>ট্রেনিং শেষ হলেও আপনার সঙ্গে সম্পর্ক কিন্তু শেষ নয়। ক্রিয়েটিভ আইটির শিক্ষার্থী হিসেবে আপনি পাচ্ছেন লাইফ টাইম সাপোর্ট। অনলাইনে ২৪/৭ সাপোর্ট পাচ্ছেন যেকোনো সময়। আমাদের বিষয় ভিত্তিক অভিজ্ঞ টিম অফলাইন বা অফলাইনে এই সাপোর্ট নিশ্চিত করে থাকেন।</p>
+</figure>
+<figure class="service-card">
+<img src="./images/computer.png" alt="">
+<h4>প্র্যাকটিক্যাল ল্যাব</h4>
+<p>কোর্স চলাকালীন সময়ে কোনভাবেই যাতে আপনার নিয়মিত প্র্যাকটিস বিঘ্নিত না হয়, সেজন্য আমাদের রয়েছে আলাদা ল্যাব। ক্রিয়েটিভ আইটি-র শিক্ষার্থী হিসেবে এই ল্যাবে যেকোনো সময়, যতক্ষণ ইচ্ছা আপনি আপনার কোর্স বিষয়ক কাজের চর্চা করতে পারেন।</p>
+</figure>
+<figure class="service-card">
+<img src="./images/freelance.png" alt="">
+<h4>ফ্রিল্যান্সিং সাপোর্ট</h4>
+<p>ট্রেনিং শেষ হলেও আপনার সঙ্গে সম্পর্ক কিন্তু শেষ নয়। ক্রিয়েটিভ আইটির শিক্ষার্থী হিসেবে আপনি পাচ্ছেন লাইফ টাইম সাপোর্ট। অনলাইনে ২৪/৭ সাপোর্ট পাচ্ছেন যেকোনো সময়। আমাদের বিষয় ভিত্তিক অভিজ্ঞ টিম অফলাইন বা অফলাইনে এই সাপোর্ট নিশ্চিত করে থাকেন।</p>
+</figure>
+<figure class="service-card">
+<img src="./images/job.png" alt="">
+<h4>জব প্লেসমেন্ট সাপোর্ট</h4>
+<p>ট্রেনিং শেষ হলেও আপনার সঙ্গে সম্পর্ক কিন্তু শেষ নয়। ক্রিয়েটিভ আইটির শিক্ষার্থী হিসেবে আপনি পাচ্ছেন লাইফ টাইম সাপোর্ট। অনলাইনে ২৪/৭ সাপোর্ট পাচ্ছেন যেকোনো সময়। আমাদের বিষয় ভিত্তিক অভিজ্ঞ টিম অফলাইন বা অফলাইনে এই সাপোর্ট নিশ্চিত করে থাকেন।</p>
+</figure>
+<figure class="service-card">
+<img src="./images/working-man.png" alt="">
+<h4>প্রোফেশনাল ইন্টার্নশিপ</h4>
+<p>ট্রেনিং শেষ হলেও আপনার সঙ্গে সম্পর্ক কিন্তু শেষ নয়। ক্রিয়েটিভ আইটির শিক্ষার্থী হিসেবে আপনি পাচ্ছেন লাইফ টাইম সাপোর্ট। অনলাইনে ২৪/৭ সাপোর্ট পাচ্ছেন যেকোনো সময়। আমাদের বিষয় ভিত্তিক অভিজ্ঞ টিম অফলাইন বা অফলাইনে এই সাপোর্ট নিশ্চিত করে থাকেন।</p>
+</figure>
+    </div>
+  </section>
+  <!-- ========================services section ====================-->
+  <!-- ========================testimonial section ====================-->
+
+  <section id="testimonial">
+    <div class="container">
+<!-- swiper js  -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="testimonial-img">
+        <img src="./images/image 2.png" alt="">
+      </div>
+      <div class="testimonial-info">
+        <h5 class="quote">
+          আমি Non-CSE ব্যাকগ্রাউন্ড এর হয়েও স্কিললার্নিং ক্যারিয়ার ট্র্যাক কোর্স করে Frontend Developer হিসেবে নিজের ক্যারিয়ার গড়তে পেরেছি।
+        </h5>
+        <h5 class="student-name">
+          তাসফিয়া জাহিন 
+        </h5>
+        <p class="university-name">
+          জগন্নাথ বিশ্ববিদ্যালয় এর শিক্ষার্থী
+        </p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="testimonial-img">
+        <img src="./images/image 3.png" alt="">
+      </div>
+      <div class="testimonial-info">
+        <h5 class="quote">
+          আমি Non-CSE ব্যাকগ্রাউন্ড এর হয়েও স্কিললার্নিং ক্যারিয়ার ট্র্যাক কোর্স করে Backend Developer হিসেবে নিজের ক্যারিয়ার গড়তে পেরেছি।
+        </h5>
+        <h5 class="student-name">
+       এরিকা হার্নাদেজ
+        </h5>
+        <p class="university-name">
+          ব্র্যাক বিশ্ববিদ্যালয় এর শিক্ষার্থী
+        </p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="testimonial-img">
+        <img src="./images/image 4.png" alt="">
+      </div>
+      <div class="testimonial-info">
+        <h5 class="quote">
+          আমি Non-CSE ব্যাকগ্রাউন্ড এর হয়েও স্কিললার্নিং ক্যারিয়ার ট্র্যাক কোর্স করে App Developer হিসেবে নিজের ক্যারিয়ার গড়তে পেরেছি।
+        </h5>
+        <h5 class="student-name">
+         এলেক্স জোসেফ
+        </h5>
+        <p class="university-name">
+          নর্থ সাউথ বিশ্ববিদ্যালয় এর শিক্ষার্থী
+        </p>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+<!-- swiper js  -->
+    </div>
+  </section>
+  <!-- ========================testimonial section ====================-->
+  <!-- ========================workshop section ====================-->
+  <section id="workshop">
+    <div class="workshop-header">
+      <h2>আমাদের পরবর্তি ফ্রি ওয়ার্কশপে জয়েন করুন</h2>
+      <p>ফ্রিল্যান্সিং-এর জন্য কোন কোর্স করবেন, সিদ্ধান্ত নিতে পারছেন না? জয়েন করুন আমাদের ফ্রি সেমিনারে। বিষয়ভিত্তিক এই সেমিনারগুলোতে প্রতিটি কোর্সের সম্ভাবনা সম্পর্কে জানতে পারবেন। তাছাড়া সেমিনারে উপস্থিত এক্সপার্ট কাউন্সেলরের সঙ্গে কথা বলে আপনি যথাযথ কোর্স বেছে নেওয়ার সিদ্ধান্ত নিতে পারবেন সহজেই</p>
+    </div>
+    <div class="container workshop-container">
+      <div class="workshop-card">
+        <p class="date">০৩ই আগস্ট থেকে ০৭ই আগস্ট,২০২২</p>
+        <h5 class="workshop-name">ফুলস্টাক ওয়েব ডেভেলপমেন্ট</h5>
+
+        <a href="" class="join-workshop">
+          জয়েন করুন
+        </a>
+      </div>
+      <div class="workshop-card">
+        <p class="date">০৩ই আগস্ট থেকে ০৭ই আগস্ট,২০২২</p>
+        <h5 class="workshop-name">ফুলস্টাক ওয়েব ডেভেলপমেন্ট</h5>
+
+        <a href="" class="join-workshop">
+          জয়েন করুন
+        </a>
+      </div>
+      <div class="workshop-card">
+        <p class="date">০৩ই আগস্ট থেকে ০৭ই আগস্ট,২০২২</p>
+        <h5 class="workshop-name">ফুলস্টাক ওয়েব ডেভেলপমেন্ট</h5>
+
+        <a href="" class="join-workshop">
+          জয়েন করুন
+        </a>
+      </div>
+      <div class="workshop-card">
+        <p class="date">০৩ই আগস্ট থেকে ০৭ই আগস্ট,২০২২</p>
+        <h5 class="workshop-name">ফুলস্টাক ওয়েব ডেভেলপমেন্ট</h5>
+
+        <a href="" class="join-workshop">
+          জয়েন করুন
+        </a>
+      </div>
+      <div class="workshop-card">
+        <p class="date">০৩ই আগস্ট থেকে ০৭ই আগস্ট,২০২২</p>
+        <h5 class="workshop-name">ফুলস্টাক ওয়েব ডেভেলপমেন্ট</h5>
+
+        <a href="" class="join-workshop">
+          জয়েন করুন
+        </a>
+      </div>
+      <div class="workshop-card">
+        <p class="date">০৩ই আগস্ট থেকে ০৭ই আগস্ট,২০২২</p>
+        <h5 class="workshop-name">ফুলস্টাক ওয়েব ডেভেলপমেন্ট</h5>
+
+        <a href="" class="join-workshop">
+          জয়েন করুন
+        </a>
+      </div>
+      <div class="workshop-card">
+        <p class="date">০৩ই আগস্ট থেকে ০৭ই আগস্ট,২০২২</p>
+        <h5 class="workshop-name">ফুলস্টাক ওয়েব ডেভেলপমেন্ট</h5>
+
+        <a href="" class="join-workshop">
+          জয়েন করুন
+        </a>
+      </div>
+      <div class="workshop-card">
+        <p class="date">০৫ই আগস্ট থেকে ০৯ই আগস্ট,২০২২</p>
+        <h5 class="workshop-name">ফুলস্টাক ওয়েব ডেভেলপমেন্ট</h5>
+
+        <a href="" class="join-workshop">
+          জয়েন করুন
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ========================workshop section ====================-->
+  <!-- ========================footer section ====================-->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-col">
+        <h5>যোগাযোগ</h5>
+        <li>হেড অফিস :মমতাজ প্লাজা (৪র্থ তলা)
+          বাড়ি # ০৭, রোড # ০৪,ধানমন্ডি,ঢাকা</li>
+        <li>+৮৮০ ৬৬২৪৬৬৬০০০
+        </li>
+        <li>+৮৮০ ৫৬২৪৮৮৮৪৪৪</li>
+        <li>info@creativeitinstitute.com</li>
+      </div>
+      <div class="footer-col">
+        <h5>কুইক লিংক</h5>
+        <li>ফ্রি সেমিনারের সময়সূচি</li>
+        <li>মেন্টরস</li>
+        <li>সাফল্যের গল্প</li>
+        <li>আমাদের গ্যালারী</li>
+        <li>আপনার প্রশ্নসমূহ</li>
+      </div>
+      <div class="footer-col">
+        <h5>আমাদের সম্পর্কে</h5>
+        <li>আমাদের সুবিধাদি</li>
+        <li>আমাদের অর্জন</li>
+        <li>ক্যারিয়ার প্লেসমেন্ট</li>
+        <li>ফ্রিল্যান্সিং</li>
+        <li>স্টুডেন্ট ফিডব্যাক</li>
+      </div>
+    </div>
+  </footer>
+  <!-- ========================footer section ====================-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./javascript/app.js"></script>
 </body>
 </html>

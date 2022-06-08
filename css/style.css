@@ -15,11 +15,14 @@
     --white:#ffffff;
     --lightBlue:rgba(142, 197, 252, 0.22);
     --violet: rgba(98, 78, 154, 1);
+
+    --yellow:#E7AA34;
     
 }
 
 body,html{
     background-color: var(--bodyColor);
+    scroll-behavior: smooth;
 }
 
 
@@ -81,19 +84,33 @@ nav,section,header{
 /* ========================navbar section ==================== */
 nav{
     position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-    width: 100%;
-    background-color: transparent;
-    z-index: 999;
-background-color: transparent;
-height: 80px;
-padding-top: 1em;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: transparent;
+        z-index: 999;
+        background-color: transparent;
+        height: 80px;
+        padding-top: 1em;
+        transition: position 300ms;
 
     
 }
+nav.active{
+    background-color: var(--white);
+    position: fixed;
+    inset: 0;
+    width: 100%;
+}
+nav.active .container>.logo{
+  color: var(--violet);
+}
+nav.active .container>.nav-list>li a{
+color: var(--violet);
+}
+
 nav .container{
     display: flex;
     justify-content: space-between;
@@ -206,7 +223,219 @@ header .container{
 /* ========================header section ==================== */
 /* ========================course section ==================== */
 
-#course
+#course{
+    padding-block: 2em;
+}
 
 
+.course-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+   
+}
+
+.course-card{
+    text-align: left;
+    width: 23%;
+    background-color: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5em;
+    padding: 0.3em;
+}
+
+.card-title{
+    font-size: var(--caption);
+    font-weight: 300;
+    color: var(--violet);
+}
+.course-name{
+    font-size: var(--caption);
+    width: 100%;
+color: var(--black);
+}
+.rating{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: var(--caption);
+    color: var(--yellow);
+}
 /* ========================course section ==================== */
+/* ========================service section ==================== */
+
+#service{
+    padding-block: 2em;
+}
+
+.service-header{
+    width: 90%;
+    padding-block: 1em;
+    margin-inline: auto;
+    text-align: center;
+}
+.service-header p{
+    width: 75%;
+    margin-inline: auto;
+}
+
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.service-card{
+    width: 30%;
+    background-color: var(--white);
+    padding: 0.5em;
+    border-radius: 10px;
+    transition: transform 300ms ;
+    overflow: hidden;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.service-card:hover{
+background-color: rgba(40, 40, 40,0.1);
+transform: scale(1.05);
+}
+.service-card img{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin-inline: auto;
+}
+
+.service-card p{
+    font-size: var(--caption);
+    line-height: 1;
+}
+/* ========================service section ==================== */
+/* ========================testimonial section ==================== */
+
+#testimonial{
+    padding-block: 2em;
+}
+.swiper-slide{
+    display: flex;
+    background-color: var(--white);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 2em;
+padding-top: 1em;
+    margin-inline: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+margin-bottom: 10px;
+}
+.testimonial-img{
+    width: 30%;
+}
+.testimonial-img img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.testimonial-info{
+    width: 60%;
+}
+.quote{
+    font-size: var(--subtitle1);
+    line-height: 1.2;
+    font-weight: 400;
+    width: 80%;
+    padding-bottom: 0.5em;
+}
+.university-name{
+    font-size: var(--caption);
+}
+/* ========================testimonial section ==================== */
+/* ========================workshop section ==================== */
+#workshop{
+    padding-block: 2em;
+}
+.workshop-header{
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.workshop-header p{
+    width: 80%;
+    margin-inline: auto;
+    line-height: 1;
+    font-size: var(--subtitle2);
+}
+.workshop-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.workshop-card{
+    width: 23%;
+    background-color: var(--lightBlue);
+    padding: 0.8em 0.3em;
+    text-align: center;
+    border-radius: 5px;
+}
+.date{
+    font-size: 0.625rem;
+}
+.workshop-name{
+    font-size: var(--caption);
+    padding-bottom: 0.5em;
+}
+.join-workshop{
+    background-color: var(--white);
+    font-size: var(--caption);
+    padding: 0.2em;
+    border-radius: 2px;
+    color: var(--black);
+    letter-spacing: 1px;
+    width: 110px;
+    display: block;
+    margin-inline: auto;
+    transition: background-color 300ms;
+}
+.join-workshop:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+/* ========================workshop section ==================== */
+/* ========================footer section ==================== */
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   gap: 2em;
+   width: 80%;
+   margin-inline :auto;
+}
+.footer-col{
+width: 30%;
+}
+.footer-col h5{
+    font-size: var(--subtitle1);
+}
+.footer-col li{
+    font-size: var(--caption);
+    cursor: pointer;
+    transition: color 100ms;
+}
+.footer-col li:hover{
+    color: var(--violet);
+}
+
+/* ========================footer section ==================== */
