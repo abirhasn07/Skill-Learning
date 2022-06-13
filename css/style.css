@@ -25,6 +25,10 @@ body,html{
     scroll-behavior: smooth;
 }
 
+title{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
 
 nav,section,header{
     max-width: 1980px;
@@ -37,6 +41,14 @@ nav,section,header{
 .container{
     width: 90%;
     margin-inline: auto;
+}
+
+
+@media (max-width:600px) {
+    .container{
+        width: 100%;
+        margin-inline: auto;
+    }
 }
 
 .section-title{
@@ -59,6 +71,7 @@ nav,section,header{
     align-items: center;
     min-height: 5em;
     gap: 1em;
+    flex-wrap: wrap;
 }
 .course-list a{
     color: var(--black);
@@ -67,6 +80,7 @@ nav,section,header{
     background-repeat: no-repeat;
     background-position: left bottom;
     transition: background-size 300ms ease;
+    width: max-content;
 }
 .course-list a:hover{
     background-size: 100% 3px;
@@ -111,6 +125,12 @@ nav.active .container>.nav-list>li a{
 color: var(--violet);
 }
 
+
+nav.active .container> .mobile-menu .bar{
+   
+    background-color: var(--violet);
+    position: absolute;
+}
 nav .container{
     display: flex;
     justify-content: space-between;
@@ -122,14 +142,14 @@ nav .container{
 
 .logo{
     font-size: var(--headline6);
-    width: 20%;
+    width: 10%;
     font-weight: 700;
     color: var(--white);
     cursor: pointer;
     
 }
 .nav-list{
-    width: 70%;
+    width: 80%;
     display: flex;
     gap: 1em;
     justify-content: center;
@@ -149,6 +169,21 @@ nav .container{
     color: var(--violet);
     background-size: 100% 3px;
 }
+
+
+.mobile-menu{
+    height: 30px;
+ width: 30px;
+   position: relative;
+   overflow: hidden;
+}
+
+.mobile-menu i{
+    position: absolute;
+    inset: 0;
+    display: none;
+}
+
 /* ========================navbar section ==================== */
 /* ========================header section ==================== */
 header{

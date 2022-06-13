@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> E Learning Website</title>
+  <title>স্কিললার্নিং</title>
+  <link rel="shortcut icon" href="./images/seo.png" type="image/x-icon">
 
   <!-- swiper js  -->
   <link
@@ -31,12 +32,17 @@
         স্কিললার্নিং
       </div>
       <ul class="nav-list">
-        <li><a href="#" class="list-item">হোম</a></li>
-        <li><a href="#course" class="list-item">কোর্স সমুহ</a></li>
-        <li><a href="#service" class="list-item">আমাদের সেবা সমুহ</a></li>
-        <li><a href="#testimonial" class="list-item">সাফল্যের গল্প</a></li>
-        <li><a href="#workshop" class="list-item">যোগাযোগ</a></li>
+        <li><a href="#" class="list-item" onclick="changeBar()">হোম</a></li>
+        <li><a href="#course" class="list-item" onclick="changeBar()">কোর্স সমুহ</a></li>
+        <li><a href="#service" class="list-item" onclick="changeBar()">আমাদের সেবা সমুহ</a></li>
+        <li><a href="#testimonial" class="list-item" onclick="changeBar()">সাফল্যের গল্প</a></li>
+        <li><a href="#contact" class="list-item" onclick="changeBar()">যোগাযোগ</a></li>
       </ul>
+
+      <div class="mobile-menu">
+        <i class="fa-solid fa-bars openMenu" onclick="changeBar()"></i>
+        <i class="fa-solid fa-xmark closeMenu" onclick="changeBar()"></i>
+      </div>
     </div>
   </nav>
   <!-- ========================navbar section ====================-->
@@ -51,8 +57,11 @@
         <p class="header-subtitle">
           অভিজ্ঞ মেন্টর আর আপডেটেড কারিকুলাম নিয়ে স্কিললার্নিং প্রস্তুত আপনাদের ক্যারিয়ার গড়ার অগ্রযাত্রায়। আমাদের ৩০০টিরও কোর্স আজই বেছে নিন আপনার পছন্দের কোর্স
         </p>
-        <button class="header-btn ">ব্রাউজ কোর্স</button>
-        <button class="header-btn active">ফ্রি সেমিনার</button>
+
+        <div class="hero-btns">
+          <button class="header-btn ">ব্রাউজ কোর্স</button>
+          <button class="header-btn active">ফ্রি সেমিনার</button>
+        </div>
       </div>
       <div class="header-img">
         <img src="./images/image 1.png" alt="">
@@ -320,7 +329,7 @@
   </section>
   <!-- ========================workshop section ====================-->
   <!-- ========================footer section ====================-->
-  <footer>
+  <footer id="contact">
     <div class="container footer-container">
       <div class="footer-col">
         <h5>যোগাযোগ</h5>

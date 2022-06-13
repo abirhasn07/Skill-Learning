@@ -1,0 +1,175 @@
+@media (max-width:600px) {
+    
+
+    /* nav{
+        display: none;
+    } */
+
+    .nav-list{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: absolute;
+        background-color:var(--violet) ;
+        top: 80px;
+        width: 100%;
+        left: -80%;
+        padding-block: 2em;
+        opacity: 0;
+        transition: left 300ms ease-in-out;
+       
+    }
+
+    .nav-list.active{
+        left: 0;
+        opacity: 1;
+      
+    }
+
+    .nav-list li a{
+        padding-left: 1em;
+    }
+
+    nav.active .container>.nav-list>li a{
+        color: var(--white);
+        }
+   
+        .list-item:hover{
+            color: var(--black);
+            background-size: 100% 3px;
+        }
+
+    .mobile-menu>.openMenu{
+        display: block;
+      color: var(--violet);
+    }
+
+    .mobile-menu>.openMenu.active{
+        display: none;
+    }
+
+    .mobile-menu>.closeMenu{
+        display: none;
+    }
+    .mobile-menu>.closeMenu.active{
+        display: block;
+    }
+
+
+    /* header  */
+    
+    header{
+        padding-bottom: 2em;
+    }
+    header .container{
+   flex-direction: column-reverse;
+    }
+   
+
+    .header-info {
+width: 100%;
+    }
+    .header-img{
+        width: 90%;
+
+    }
+    .header-info{
+        text-align: left;
+    }
+
+    .header-title{
+        font-size: var(--headline5
+        );
+        width: 90%;
+        margin-inline: auto;
+    }
+    .header-subtitle{
+        text-align: left;
+        width: 90%;
+        margin-inline: auto;
+        padding: 0;
+    }
+    .hero-btns{
+    
+      
+        display: block;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        text-align: center;
+    }
+    /* header  */
+
+
+    /* course  */
+
+    #course{
+        padding-block: 0.5em;
+    }
+
+    .section-subtitle{
+    display: none;
+    }
+
+    .course-list{
+    display: none;
+    }
+
+    .course-card{
+        width: 90%;
+    }
+    /* course  */
+
+    /* service  */
+    .service-header p{
+        display: none;
+    }
+
+    .service-card{
+        width: 95%;
+        text-align: center;
+        padding-block: 1em;
+    }
+    /* service  */
+
+    /* ========================testimonial section ==================== */
+
+    .swiper-slide{
+        gap: 1em;
+        flex-direction: column;
+    }
+    .testimonial-info{
+        width: 90%;
+        text-align: center;
+    }
+    .quote{
+        width: 100%;
+        font-size: 0.625rem;
+    }
+    /* ========================testimonial section ==================== */
+    #workshop{
+        padding-block: 1em;
+    }
+    .workshop-header{
+        width: 100%;
+    }
+    .workshop-header p{
+        display: none;
+    }
+    .workshop-card{
+        width: 100%;
+    }
+
+footer{
+    padding-top: 2em;
+}
+
+.footer-container{
+    gap: 0.5em;
+    width: 90%;
+}
+
+    .footer-col{
+        width: 90%;
+        }
+}
